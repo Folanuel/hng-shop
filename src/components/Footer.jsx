@@ -1,9 +1,9 @@
 import React from 'react'
 import Paw from '../images/Paw and Purr Logo markfootpurrlogo.png'
-// import Ig from '../assets/InstagramIG.png'
-// import X from '../assets/TwitterTwitter.png'
-// import Meta from '../assets/Frame 48096462facebook.png'
-// import In from '../assets/Frame 48096461linkedin.png'
+import Ig from '../images/Social mediaig.png'
+import X from '../images/Social mediatwitter.png'
+import Meta from '../images/Social mediafacebook.png'
+import Pinterest from '../images/Social mediapinterest.png'
 
 
 
@@ -12,14 +12,14 @@ const Footer = () => {
         <div>        
         <div className=' bg-[#005858] py-4 md:px-[130px] pt-10 md:flex md:items-center  text-white'>
             <div className='space-y-5  pr-56'>
-                <img src={Paw} alt='logo' className='' />
-                <p>Follow Us</p>                
-                {/* <div className='flex'>
+                <img src={Paw} alt='logo' className='pl-6' />
+                <p className='font-bold text-lg text-center'>Follow Us</p>                
+                <div className='flex space-x-2'>
                 <img src={Ig} alt='instagram' className='' />
                 <img src={X} alt='twitter' className='' />
                 <img src={Meta} alt='facebook' className='' />
-                
-                </div> */}
+                <img src={Pinterest} alt='pinterest' className='' />                
+                </div>
             </div>
             <div className='py-5 md:py-0 md:flex md:flex-row md:space-x-20 '>
                 <div className='space-y-4'>
@@ -50,6 +50,9 @@ const Footer = () => {
             </div>
             
             
+        </div>
+        <div className='bg-[#008080] text-center p-6'>
+            <p className='text-white'>2024 Designed and Developed with love</p>
         </div>
 
         </div>

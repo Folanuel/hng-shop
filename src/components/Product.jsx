@@ -16,13 +16,19 @@ import img13 from '../images/Frame 6img13.png'
 import img14 from '../images/Frame 6img14.png'
 import img15 from '../images/Frame 6img15.png'
 import Price from '../images/Continuousprice range.png'
+import star5 from '../images/Rating5stars.png'
+import star4 from '../images/Ratingratingstar.png'
+import star3 from '../images/Rating2stars.png'
+import star2 from '../images/Rating2stars.png'
+import star1 from '../images/Rating1star.png'
 
 const Product = () => {
     const items = ['Collars, Leashes & Harnesses', 'Beds & Furnitures', 'Toys & Scratchers', 'Bowls &Feedets', 'Grooming Supplies', 'Apparel & Accessories', 'Treats & Supplements', 'Litter & Litter Boxes', 'Carriers & Travels'];    
     const items1 = ['Puppy', 'Kitten', 'Adult', 'Senior', 'All Stages'];    
+    const items2 = [star5, star4, star3, star2, star1];    
 
     return (
-        <div className="flex pl-[250px]">
+        <div className="flex pl-[205px]">
         <div className="p-4">
         <h1 className='font-bold pb-4'>Product Type</h1>
             <div className="grid grid-rows-4 gap-4">
@@ -46,10 +52,10 @@ const Product = () => {
             <div className="h-[0.1px] w-full bg-gray-400 mt-10"></div>
         <h1 className='font-bold pb-4 pt-4'>Rating</h1>
             <div className="grid grid-rows-4 gap-4">
-            {items.map((item, index) => (
+            {items2.map((item, index) => (
                 <div key={index} className="flex items-center">
                 <input type="checkbox" className="mr-2" />
-                <span>{item}</span>
+                <img src={item} alt={`Rating ${index + 1} stars`} />
                 </div>
             ))}
             </div>
@@ -62,7 +68,7 @@ const Product = () => {
             </div>
             <p className='bg-[#005858] text-white rounded-3xl w-fit mt-4 px-5 py-2 cursor-pointer'>Update</p>
             
-            
+            <div className="h-[0.1px] w-full bg-gray-400 mt-10"></div>
         </div>
         <div className="p-4">
             <div className="grid grid-cols-3 gap-4">

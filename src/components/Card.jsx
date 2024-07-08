@@ -11,6 +11,7 @@ const Card = ({ picture, title, description, rating, price }) => {
                 <div className="mt-2">
                     <img src={rate} alt={rating} className="w-16" />
                     <span className="text-gray-900 text-lg font-bold">${price}</span>
+                    <p className='bg-white text-[#005858] font-bold border border-rose-500 rounded-3xl w-fit mt-4 px-5 py-2 cursor-pointer'>Add to Cart</p>
                 </div>
             </div>
         </div>
