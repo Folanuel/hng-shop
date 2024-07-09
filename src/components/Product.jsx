@@ -29,6 +29,24 @@ const Product = () => {
         setIsFilterOpen(!isFilterOpen);
     };
 
+    const products = [
+        { img: img1, title: "Cozy Cuddle Cave", description: "The purr-fect hideaway for your furry friend", price: 29.99 },
+        { img: img2, title: "Recycled Rope Toy", description: "Eco-friendly toy for endless fun", price: 19.99 },
+        { img: img3, title: "Feather Teaser Toy", description: "Interactive toy for playful cats", price: 39.99 },
+        { img: img4, title: "The Wolf IQ Ball", description: "Challeng your Dogs mind and keep them active", price: 24.99 },
+        { img: img5, title: "Cozy Cat Bed", description: "Soft and warm bed for cat", price: 59.99 },
+        { img: img6, title: "Customizable Pet Collar", description: "Personalized collar with name tag", price: 14.99 },
+        { img: img7, title: "Catnip Infused Mouse Toy", description: "Irrestible toy for cats to chase", price: 34.99 },
+        { img: img8, title: "Plosh Squeaky Toy", description: "Soft toy wit a squeaker inside", price: 9.99 },
+        { img: img9, title: "Luxurious Custom Pet Bed", description: "Comfortable and stylish custom pet bed.", price: 44.99 },
+        { img: img10, title: "Stainless Steel Feeding Bowl", description: "Durable and easy to clean feeding bowl", price: 49.99 },
+        { img: img11, title: "Cooling Mat", description: "Keeps your pet cool during hot days", price: 54.99 },
+        { img: img12, title: "Scratching Post", description: "Sturdy post for cats to scratch and climb", price: 11.99 },
+        { img: img13, title: "Harness", description: "For dogswho love to explore", price: 28.99 },
+        { img: img14, title: "Interactive Laser Toy", description: "Lose pointer for hours of play", price: 23.99 },
+        { img: img15, title: "Waterproof Dog Jacket", description: "Keep Your dog dry and comfortable", price: 33.99 }
+    ];
+
     const items = [
         'Collars, Leashes & Harnesses',
         'Beds & Furnitures',
@@ -93,14 +111,13 @@ const Product = () => {
             </div>
             <div className="p-4 md:w-3/4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15].map((img, index) => (
+                    {products.map((product, index) => (
                         <Card
                             key={index}
-                            picture={img}
-                            title="Sample Product"
-                            description="This is a sample product description."
-                            rating={4.5}
-                            price={29.99}
+                            picture={product.img}
+                            title={product.title}
+                            description={product.description}                            
+                            price={product.price}
                         />
                     ))}
                 </div>
