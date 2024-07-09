@@ -3,7 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 
 const Searchbar = () => {
     return (
-        <nav className="w-full p-4 bg-[#008080] shadow-md">
+        <nav className="w-full p-4 bg-[#008080] shadow-md ">
             <div className="flex justify-center">
                 <div className="relative w-full max-w-lg">
                     <input 
